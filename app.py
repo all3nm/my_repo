@@ -6,7 +6,7 @@ from services.user_service import UserService
 def main() -> None:
     """Run the application."""
     service = UserService()
-    print(service.get_display_name(1))
+    print(service.getDisplayName(1))
 
 
 if __name__ == "__main__":

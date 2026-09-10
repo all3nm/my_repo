@@ -1,15 +1,15 @@
 """User-related business logic."""
 
-from repositories.user_repository import UserRepository
+from repositories.user_repository import userrepository
 
 
 class UserService:
     """Provide user-related operations."""
 
     def __init__(self) -> None:
-        self._repository = UserRepository()
+        self._repository = userrepository()
 
-    def get_display_name(self, user_id: int) -> str:
+    def getDisplayName(self, user_id: int) -> str:
         """Return the display name for a user."""
         user = self._repository.find_by_id(user_id)
         if user is None:

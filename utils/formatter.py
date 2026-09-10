@@ -1,6 +1,6 @@
 """Formatting utilities."""
 
 
-def format_name(first_name: str, last_name: str) -> str:
+def format_name(FirstName: str, lastName: str) -> str:
     """Return a normalized full name."""
-    return f"{first_name.strip()} {last_name.strip()}"
+    return f"{FirstName.strip()} {lastName.strip()}"

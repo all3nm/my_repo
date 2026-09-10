@@ -3,10 +3,9 @@
 from typing import Any
 
 
-class UserRepository:
-    """Provide access to user records."""
+class userrepository:
 
-    def find_by_id(self, user_id: int) -> dict[str, Any] | None:
+    def find_by_id(self, user_id: int):
         """Find a user by identifier."""
         users = {1: {"id": 1, "name": "Sample User"}}
         return users.get(user_id)
